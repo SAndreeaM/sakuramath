@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "shortcut icon" href = "images/icon.ico" />
+	
+		<title> さくら数学 | Calculator </title>
+		<meta charset = "utf-8" />
+	
+		<link rel = "stylesheet" type = "text/css" href = "css.css">
+		<link rel = "stylesheet" type = "text/css" href = "sidebar.css">
+		<link rel = "stylesheet" type = "text/css" href = "chatbox.css">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "sidebar.js"></script>
+		<script src = "calculator.js"></script>
+
+	</head>
+	
+	<header>
+		<div> <a href = "index.html"> <img src = "images/logo.png" alt = "logo"> </a> </div>
+	</header>
+	
+	<body>
+		<div id = "sidebar">
+		
+			<div class = "toggle-btn" onclick = "toggleSidebar()">
+		
+				<span id = "line1"></span>
+				<span id = "line2"></span>
+			
+			</div>
+		
+			<ul>
+				<li> <a href = "index.html" style = "color: #FF3F80; text-decoration: none;"> Home </a> </li>
+				<li> <a href = "calculator.html" style = "color: #FF3F80; text-decoration: none;"> Calculator </a> </li>
+				<li> <a href = "contact.html" style = "color: #FF3F80; text-decoration: none;"> Contact Us </a> </li>
+			</ul>
+			
+			<p id = "copyright"> © Săndulache Andreea Maria </p>
+			<p> </p>
+	
+		</div>
+	</body>
+	
+	<section>
+		
+		<div class = "chatbox_calculator">
+		
+			<h1> Calculator </h1>
+			<p> Welcome to our calculator. Please input any numerical values in their designated places, then select which equasion you would want to be performed. Hit "Calculate" and voilá! </p>
+			<p> If you would like to delete your history, hit the "Delete History" button. </p>
+		
+			<br/><hr/><br/>
+		
+			<div id = "divx"> X: <input type = "text" id = "x" placeholder = "Enter a numerical value." /> </div>
+			<br/><br/>
+			<div id = "divy"> Y: <input type = "text" id = "y" placeholder = "Enter a numerical value." /> </div>
+			
+			<br/><hr/><br/>
+			
+			<select id = "eq" onchange = "change()">
+			
+				<option value = "sum"> Sum (+) </option>
+				<option value = "sub"> Subtraction (-) </option>
+				<option value = "mult"> Multiplication (x) </option>
+				<option value = "fact"> Factorial (!) </option>
+				<option value = "div"> Division (/) </option>
+				<option value = "pow"> Power (^) </option>
+				<option value = "sqrt"> Square Root (√) </option>
+
+			
+			</select>
+			
+			<br/><br/>
+			
+			<button type = "button" id = "butoane" onclick = "calculate()"> Calculate </button>
+			
+			<br/><br/>
+			
+			<h3> Result </h3>
+			<div id = "res"></div>
+			
+			<hr/><br/>
+			
+			<h3> History </h3>
+				
+				<button type = "button" id = "butoane" onclick = "del()"> Delete History </button>
+				
+				<br/><br/>
+				
+			<div id = "history"></div>
+		
+	</section>
+	
+	<footer>
+		<p id = "copyright_footer"> © Săndulache Andreea Maria </p>
+	</footer>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel = "shortcut icon" href = "images/icon.ico" />
+	
+		<title> さくら数学 | Contact </title>
+		<meta charset = "utf-8" />
+	
+		<link rel = "stylesheet" type = "text/css" href = "css.css">
+		<link rel = "stylesheet" type = "text/css" href = "sidebar.css">
+		<link rel = "stylesheet" type = "text/css" href = "chatbox.css">
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src = "sidebar.js"></script>
+		<script src = "contact.js"></script>
+
+	</head>
+	
+	<header>
+		<div> <a href = "index.html"> <img src = "images/logo.png" alt = "logo"> </a> </div>
+	</header>
+	
+	<body>
+		<div id = "sidebar">
+		
+			<div class = "toggle-btn" onclick = "toggleSidebar()">
+		
+				<span id = "line1"></span>
+				<span id = "line2"></span>
+			
+			</div>
+		
+			<ul>
+				<li> <a href = "index.html" style = "color: #FF3F80; text-decoration: none;"> Home </a> </li>
+				<li> <a href = "calculator.html" style = "color: #FF3F80; text-decoration: none;"> Calculator </a> </li>
+				<li> <a href = "contact.html" style = "color: #FF3F80; text-decoration: none;"> Contact Us </a> </li>
+			</ul>
+			
+			<p id = "copyright"> © Săndulache Andreea Maria </p>
+			<p> </p>
+	
+		</div>
+	</body>
+	
+	<section>
+		
+		<div class = "chatbox_calculator" id = "contact">
+		
+			<h1> Want to get in touch? </h1>
+			<p> Have you got any inquiries about our services? Or you would like to give us some feedback? (?・・)σ</p>
+			<p> Complete this form in order to send us a direct message. ♥(ˆ⌣ˆԅ) </p>
+			<p> (the * fields are compulsory) </p>
+		
+			<br/><hr/><br/>
+		
+			<form id = "register" action = "">
+			
+				<div class="field">
+				
+					Name*: <input type="text" id="name" />
+					<div class="error">The field is empty!</div>
+					<br/><br/>
+					
+				</div>
+				
+				<div class="field">
+				
+					Email*: <input type="text" id="email" />
+					<div class="error">The field is empty!</div>
+					<br/><br/>
+					
+				</div>
+				
+				<div class="field">
+				
+					Phone Number: <input type="text" id="phone" />
+					<br/><br/></br>
+					
+				</div>
+				
+				<div class="field">
+				
+					Address: <input type="text" id="address" />
+					<br/><br/></br>
+					
+				</div>
+				
+				<div type="password" class="field">
+				
+					Password*: <input type="password" id="password1" />
+					<div class="error">The field is empty!</div>
+					<br/><br/>
+					
+				</div>
+				
+				<div class="field">
+				
+					Repeat Password*: <input type="password" id="password2" />
+					<div class="error">The field is empty!</div>
+					<br/><br/>
+					
+				</div>
+				
+				<div class="field">
+				
+					Message*: <input type="text" id="message" />
+					<div class="error">The field is empty!</div>
+					<br/><br/>
+					
+				</div>
+			
+			</form>
+			
+			<div class = "ty"> Your message has been sent successfully! Thank you! (＝⌒▽⌒＝)</div>
+			
+			<br/>
+			
+			<button id = "send"> SEND </button>
+		
+	</section>
+	
+	<footer>
+		<p id = "copyright_footer"> © Săndulache Andreea Maria </p>
+	</footer>
+
+</html>

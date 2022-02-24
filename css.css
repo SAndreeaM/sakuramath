@@ -1,0 +1,42 @@
+body {
+	background-color: #F5F5F5;
+}
+
+div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+div img {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#copyright {
+	position: absolute;
+	color: #FF3F80;
+	left: 15px;
+	bottom: 25px;
+}
+
+#copyright_footer {
+	bottom: 5px;
+	position: absolute;
+	color: #313639;
+	left: 45%;
+}
+
+.error {
+	color: red;
+	display: none;
+}
+
+.ty {
+	color: green;
+	display: none;
+}

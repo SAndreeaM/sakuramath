@@ -1,0 +1,50 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+#sidebar {
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: #313639;
+	left: -200px;
+	
+	transition: all 500ms ease-in-out;
+}
+
+#sidebar.active {
+	left: 0px;
+}
+
+#sidebar ul li {
+	color: #FF3F80;
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid #42494f;
+}
+
+#sidebar .toggle-btn {
+	position: absolute;
+	left: 230px;
+	top: 20px;
+}
+
+#sidebar .toggle-btn span {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 5px;
+	background: #FF3F80;
+	border-radius: 25px;
+	margin: 5px 0px;
+}
+
+#line1 {
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
